@@ -109,19 +109,19 @@
             })
         });
 
-        var layer1 = new ol.layer.Tile({
-            source: new ol.source.TileWMS({
-                url: str,
-                params: {
-                    'LAYERS': 'EGH:Карта_экообъектов_лок',
-                    'VERSION': '1.1.1',
-                    'FORMAT': 'image/png',
-                    'TILED': true
-                },
-                serverType: 'geoserver',
-                })
-        });
-        layer1.setVisible(false);
+        //var layer1 = new ol.layer.Tile({
+        //    source: new ol.source.TileWMS({
+        //        url: str,
+        //        params: {
+        //            'LAYERS': 'EGH:Карта_экообъектов_лок',
+        //            'VERSION': '1.1.1',
+        //            'FORMAT': 'image/png',
+        //            'TILED': true
+        //        },
+        //        serverType: 'geoserver',
+        //        })
+        //});
+        //layer1.setVisible(false);
 
         var layer2 = new ol.layer.Tile({
             source: new ol.source.TileWMS({
@@ -403,7 +403,7 @@
         });
         layer22.setVisible(true);
 
-        var layers = [raster, layer1, layer2, layer3, layer5, layer6, layer7, layer8, layer9, layer10, layer11, layer12, layer13, layer14, layer15, layer16, layer17, layer18, layer19, layer20, layer21, layer22, vector];
+        var layers = [raster, layer2, layer3, layer5, layer6, layer7, layer8, layer9, layer10, layer11, layer12, layer13, layer14, layer15, layer16, layer17, layer18, layer19, layer20, layer21, layer22, vector];
 
 
         var myFormat = function (dgts) {
